@@ -28,16 +28,16 @@ cd seq_nms_yolo
 
 4. Download `yolo.weights` and `tiny-yolo.weights` by running:
 ```
-    wget https://pjreddie.com/media/files/yolo.weights
-    wget https://pjreddie.com/media/files/yolov2-tiny.weights
+wget https://pjreddie.com/media/files/yolo.weights
+wget https://pjreddie.com/media/files/yolov2-tiny.weights
 ```
 5. Create your conda enviroment and install all the packages required (you have to activate conda first with `conda init`. For more info https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html):
 ```
-conda create -p ./env python=2.7
+conda create -y -p ./env python=2.7
 conda activate ./env
 
-conda install -y opencv matplotlib pillow scipy tensorflow 
-conda install -y -c conda-forge tf_object_detection
+pip install --upgrade tensorflow tf_object_detection
+conda install -y opencv matplotlib pillow scipy
 ```
 
 6. Change the path of `PKG_CONFIG_PATH` (an environment variable that specifies additional paths in which `pkg-config` will search for its .pc files):
@@ -50,7 +50,7 @@ export PKG_CONFIG_PATH
 7. Copy the libdarknet object and link file in your conda enviroment
 
 ```
-cp libdarknet.so./env/lib
+cp libdarknet.so ./env/lib
 cp libdarknet.a ./env/lib
 ```
 
