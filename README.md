@@ -70,6 +70,8 @@ python get_pkllist.py
 
 And you will see detection results in `video/output`
 
+13. (Extra) If you want to try with different videos and with seq-nms and only nms, execute `execute_all.sh` in the video folder (giving it execution permision) and all the sample videos in the video folder will be used.
+
 ## Reference
 
 This project copies lots of code from [darknet](https://github.com/pjreddie/darknet) , [Seq-NMS](https://github.com/lrghust/Seq-NMS) and  [models](https://github.com/tensorflow/models).
