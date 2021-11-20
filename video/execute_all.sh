@@ -24,6 +24,5 @@ for video in ${video_files[@]}; do
     mv output.mp4 $video_no_ext/output_nms.mp4
     mv output $video_no_ext/output_nms
 
-    mv $video $video_no_ext/
     rm input/*
 done
