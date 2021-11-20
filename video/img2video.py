@@ -43,7 +43,7 @@ def main():
     video = cv2.VideoWriter(video_name, fourcc, 30.0, (width,height))
     for image in images:
         video.write(cv2.imread(os.path.join(image_folder, image)))
-    cv2.destroyAllWindows()
+    #cv2.destroyAllWindows()
     video.release()
 
 if __name__ == "__main__":
