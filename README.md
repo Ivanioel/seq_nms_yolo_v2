@@ -16,7 +16,7 @@ git clone https://github.com/Ivanioel/seq_nms_yolo_v2
 ```
 2. Go inside the proyect: 
 ```
-cd seq_nms_yolo
+cd seq_nms_yolo_v2
 ```
 
 3. Make your proyect using the command `make`.
@@ -70,7 +70,7 @@ python get_pkllist.py
 
 And you will see detection results in `video/output`
 
-13. (Extra) If you want to try with different videos and with seq-nms and only nms, execute `execute_all.sh` in the video folder (giving it execution permision) and all the sample videos in the video folder will be used.
+13. (Extra) If you want to try with different videos and with seq-nms and only nms, execute `execute_all.sh` in the video folder (giving it execution permision with `chmod +x execute_all.sh`) and all the sample videos in the video folder will be used.
 
 ## Reference
 
